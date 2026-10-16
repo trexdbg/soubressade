@@ -1,0 +1,26 @@
+name: Validate catalog
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify sellers JSON and required fields
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          vendors=json.loads(pathlib.Path('data/vendors.json').read_text())
+          assert isinstance(vendors,list)
+          ids=set()
+          for v in vendors:
+              assert all(v.get(k) for k in ('id','name','address','city','status','source','evidence'))
+              assert v['status'] in ('catalogue','mention','historique')
+              assert v['id'] not in ids
+              ids.add(v['id'])
+          print(f'{len(vendors)} fiches valides')
+          PY
