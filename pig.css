@@ -1,0 +1,10 @@
+/* Cochon pixel-art : décoration non interactive au-dessus des cartes. */
+#pixel-pig{position:fixed;left:0;top:0;width:64px;height:48px;z-index:400;pointer-events:none;transform:translate3d(-100px,-100px,0);will-change:transform;filter:drop-shadow(0 4px 1px #6b463944)}
+#pixel-pig svg{display:block;width:100%;height:100%;shape-rendering:crispEdges;image-rendering:pixelated;overflow:visible}
+#pixel-pig.walking .pig-leg-front{animation:pig-step .28s steps(2,end) infinite alternate;transform-origin:34px 36px}
+#pixel-pig.walking .pig-leg-back{animation:pig-step .28s steps(2,end) infinite alternate-reverse;transform-origin:16px 36px}
+#pixel-pig.walking .pig-body{animation:pig-bob .28s steps(2,end) infinite alternate}
+#pixel-pig[data-facing="left"] svg{transform:scaleX(-1)}
+@keyframes pig-step{from{transform:translateY(-2px)}to{transform:translateY(2px)}}
+@keyframes pig-bob{to{transform:translateY(-1px)}}
+@media(prefers-reduced-motion:reduce){#pixel-pig{display:none!important}}
