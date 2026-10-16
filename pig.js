@@ -29,13 +29,13 @@
   document.body.appendChild(sprite);
 
   const selector = '.hero-inner, .hero-art, .vendor, .toolbar, #map, .contribute, .about';
-  const position = {x:-100,y:-100};
+  const position = {x:Math.max(8,Math.min(window.innerWidth-80,42)),y:85};
   let targets = [], index = 0, last = 0, pauseUntil = 0, raf = 0;
   const random = (a,b)=>a+Math.random()*(b-a);
   function collect() {
     targets = [...document.querySelectorAll(selector)].filter(el => {
       const r=el.getBoundingClientRect();
-      return r.width>=110 && r.height>=35 && getComputedStyle(el).display!=='none';
+      return r.width>=110 && r.height>=35 && r.bottom>45 && r.top<window.innerHeight-35 && getComputedStyle(el).display!=='none';
     });
     if(index>=targets.length) index=0;
   }
@@ -55,6 +55,7 @@
     if(!last) last=now;
     const dt=Math.min((now-last)/1000,.05);last=now;
     if(!dest) next();
+    if(destElement && (destElement.getBoundingClientRect().bottom<0 || destElement.getBoundingClientRect().top>window.innerHeight)) {dest=null;next();}
     if(dest&&destElement){
       const rect=destElement.getBoundingClientRect();
       dest.y=rect.top-39;
