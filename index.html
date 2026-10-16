@@ -7,7 +7,50 @@
 <link rel="preconnect" href="https://unpkg.com"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzxP+y3T/TNLQgjPVLKGbJVxU=" crossorigin="">
 <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="pig.css"></head><body>
 <header class="topbar"><a class="brand" href="./" aria-label="Soubressade, accueil"><span class="brand-mark">S</span><span>Soubressade<span class="brand-dot">.</span></span></a><nav><a href="#adresses">Les adresses</a><a href="#carte">La carte</a><a class="nav-submit" href="#contribuer">Proposer un vendeur ↗</a></nav></header>
-<main><section class="hero"><div class="hero-inner"><p class="eyebrow">LE GUIDE DES BONNES ADRESSES · ALPES-MARITIMES</p><h1>La soubressade,<br><em>ça se trouve.</em></h1><p class="lead">Les bonnes boucheries, les charcutiers passionnés et les adresses à connaître. Retrouvez votre spécialité préférée près de chez vous.</p><a class="primary" href="#adresses">Explorer les adresses <span aria-hidden="true">↗</span></a><div class="hero-note">Des sources consultables. Pas de promesse de stock en temps réel.</div></div><div class="hero-art" aria-hidden="true"><div class="circle circle-one"></div><div class="circle circle-two"></div><div class="sausage">SOUBRESSADE<span>· LE GOÛT DU SUD ·</span></div><span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✳</span></div></section>
+<main><section class="hero"><div class="hero-inner"><p class="eyebrow">LE GUIDE DES BONNES ADRESSES · ALPES-MARITIMES</p><h1>La soubressade,<br><em>ça se trouve.</em></h1><p class="lead">Les bonnes boucheries, les charcutiers passionnés et les adresses à connaître. Retrouvez votre spécialité préférée près de chez vous.</p><a class="primary" href="#adresses">Explorer les adresses <span aria-hidden="true">↗</span></a><div class="hero-note">Des sources consultables. Pas de promesse de stock en temps réel.</div></div><div class="hero-art" aria-hidden="true"><div class="circle circle-one"></div><div class="circle circle-two"></div>
+<svg class="sobr-illustration" viewBox="0 0 680 490" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration de soubressade artisanale et tartines">
+<defs>
+<linearGradient id="skin" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f69b50"/><stop offset=".24" stop-color="#df6335"/><stop offset=".55" stop-color="#b83723"/><stop offset=".8" stop-color="#95271c"/><stop offset="1" stop-color="#64251e"/></linearGradient>
+<linearGradient id="flesh" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffae56"/><stop offset=".42" stop-color="#dc552c"/><stop offset="1" stop-color="#9d2c20"/></linearGradient>
+<linearGradient id="bread" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eac08a"/><stop offset=".65" stop-color="#ba7a42"/><stop offset="1" stop-color="#80461f"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fff0ce" stop-opacity=".9"/><stop offset="1" stop-color="#ffedcc" stop-opacity="0"/></radialGradient>
+<filter id="shadow" x="-30%" y="-50%" width="160%" height="210%"><feGaussianBlur stdDeviation="13"/></filter>
+<pattern id="paprika" width="21" height="19" patternUnits="userSpaceOnUse"><circle cx="3" cy="7" r="2.3" fill="#7c241c" opacity=".35"/><circle cx="14" cy="13" r="1.8" fill="#ffd08a" opacity=".45"/><path d="M8 1l4 3" stroke="#8b2c19" stroke-width="1.4" opacity=".4"/></pattern>
+</defs>
+<ellipse cx="350" cy="228" rx="294" ry="221" fill="url(#glow)"/>
+<ellipse cx="360" cy="415" rx="250" ry="25" fill="#85432a" opacity=".23" filter="url(#shadow)"/>
+<g transform="rotate(-17 364 255)">
+<path d="M158 166C238 135 420 142 525 184C545 191 551 213 551 253C551 302 539 321 508 330C400 358 239 348 158 324Z" fill="url(#skin)" stroke="#7e251e" stroke-width="9"/>
+<path d="M161 177C249 152 411 157 517 196" fill="none" stroke="#ffc078" stroke-width="11" opacity=".55" stroke-linecap="round"/>
+<path d="M202 309C300 336 432 336 505 318" fill="none" stroke="#681d1b" stroke-width="11" opacity=".35" stroke-linecap="round"/>
+<path d="M188 169C214 207 216 285 187 328M263 158C282 209 285 293 267 340M342 158C351 208 358 308 347 345M423 169C434 210 437 291 423 339M497 186C509 217 514 292 503 328" fill="none" stroke="#78231e" stroke-width="3" opacity=".24"/>
+<path d="M158 166C238 135 420 142 525 184C545 191 551 213 551 253C551 302 539 321 508 330C400 358 239 348 158 324Z" fill="url(#paprika)" opacity=".65"/>
+<path d="M532 207L570 221L578 252L566 281L535 304" fill="#9e3827" stroke="#792820" stroke-width="7"/>
+<path d="M566 223L594 210M570 229L600 232M572 242L607 253M573 260L601 279M567 278L589 297" stroke="#dcb583" stroke-width="5" stroke-linecap="round"/>
+<path d="M576 228Q597 199 615 212M576 250Q613 251 620 281" fill="none" stroke="#9b693d" stroke-width="4"/>
+<ellipse cx="158" cy="246" rx="71" ry="87" fill="#853024" stroke="#6d241b" stroke-width="8"/>
+<ellipse cx="153" cy="244" rx="63" ry="79" fill="url(#flesh)" stroke="#f4a061" stroke-width="9"/>
+<ellipse cx="153" cy="244" rx="57" ry="72" fill="url(#paprika)"/>
+<path d="M114 202q33-33 72 4M109 264q32 41 79 1" fill="none" stroke="#ffc080" stroke-width="5" opacity=".55" stroke-linecap="round"/>
+<g fill="#ffe0a2" opacity=".7"><circle cx="124" cy="224" r="4"/><circle cx="171" cy="214" r="3"/><circle cx="158" cy="261" r="3.5"/><circle cx="132" cy="279" r="2.5"/></g>
+</g>
+<g transform="rotate(13 234 345)">
+<path d="M90 326Q146 298 232 305Q298 313 332 353L320 395Q213 422 93 393Q72 370 90 326Z" fill="url(#bread)" stroke="#8f5429" stroke-width="8"/>
+<path d="M103 329Q154 313 226 318Q287 323 319 351L305 376Q199 397 103 378Q88 354 103 329Z" fill="#f7d7a3"/>
+<path d="M112 330Q161 305 226 323Q282 329 309 353Q261 380 204 378Q137 382 106 364Z" fill="url(#flesh)" stroke="#bc4428" stroke-width="4"/>
+<path d="M112 330Q161 305 226 323Q282 329 309 353Q261 380 204 378Q137 382 106 364Z" fill="url(#paprika)"/>
+<path d="M135 339q48-23 107 0M154 362q52 9 106-9" fill="none" stroke="#ffbc72" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+</g>
+<g transform="rotate(-12 450 362)">
+<ellipse cx="455" cy="363" rx="87" ry="69" fill="#8c2b1f" stroke="#682219" stroke-width="7"/>
+<ellipse cx="451" cy="357" rx="79" ry="61" fill="url(#flesh)" stroke="#f6ab67" stroke-width="8"/>
+<ellipse cx="451" cy="357" rx="72" ry="54" fill="url(#paprika)"/>
+<path d="M400 348q52-36 99-1M412 384q48 17 80-17" fill="none" stroke="#ffbf7b" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+</g>
+<g fill="none" stroke="#54734d" stroke-width="5" stroke-linecap="round"><path d="M518 411q44-19 74-56"/><path d="M519 412q-23-2-47-16"/></g>
+<g fill="#66834d"><ellipse cx="552" cy="379" rx="20" ry="8" transform="rotate(-25 552 379)"/><ellipse cx="575" cy="366" rx="21" ry="9" transform="rotate(24 575 366)"/><ellipse cx="493" cy="397" rx="19" ry="8" transform="rotate(27 493 397)"/><ellipse cx="539" cy="405" rx="17" ry="7" transform="rotate(27 539 405)"/></g>
+<g fill="#efbd78"><circle cx="366" cy="401" r="4"/><circle cx="347" cy="418" r="2.5"/><circle cx="384" cy="417" r="3"/></g>
+</svg><span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✳</span></div></section>
 <section class="section" id="adresses"><div class="section-heading"><div><p class="eyebrow">LES BONNES PISTES</p><h2>Où en trouver dans le 06 ?</h2><p>Une sélection documentée. Les adresses sont classées selon la qualité de leur preuve de vente.</p></div><div class="counter"><b id="count">—</b><small>adresses référencées</small></div></div>
 <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Rechercher une ville, un commerce…" aria-label="Rechercher des vendeurs"></label><select id="filter" aria-label="Filtrer les vendeurs"><option value="all">Toutes les adresses</option><option value="catalogue">Catalogue du commerçant</option><option value="mention">Mention de soubressade</option><option value="historique">Piste historique</option></select></div>
 <div class="results" id="results" aria-live="polite"></div><p class="disclaimer">Les prix, stocks, horaires et points de vente peuvent évoluer. Appelez le commerçant avant de vous déplacer. Les points sur la carte sont indicatifs.</p></section>
