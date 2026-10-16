@@ -41,7 +41,7 @@ function render(){
     markerById.set(v.id,marker);
   });
   fitVisible();
-  document.getElementById("map-empty").hidden=visibleVendors.some(validPosition);
+  if(map)document.getElementById("map-empty").hidden=visibleVendors.some(validPosition);
 }
 async function start(){
   try{
